@@ -1,65 +1,143 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio | Calvin Leung</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>My Profile</title>
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
 </head>
 
 <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="navbar-brand" href="index.html" style="font-weight: bold;">Calvin Leung</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Calvin Leung</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+                  </ul>
+                </div>
+            </nav>
+        </nav>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Portfolio</h1>
+        <br>
 
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-1.jpg" width="600" height="600" alt="Word Guess">
-        
-        <h3>Word Guess</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-2.jpg" width="600" height="600" alt="RPG Game">
+        <div class="container">
 
-        <h3>RPG Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-5.jpg" width="600" height="600" alt="Trivia Game">
+            <div class="row">
 
-        <h3>Trivia Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-7.jpg" width="600" height="600" alt="Rutgers Info Widget">
+                <div class="col-sm-2">
+                </div>
+                
+                <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://assets-cdn.github.com/images/modules/open_graph/github-octocat.png" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Github!</h5>
+                                  <p class="card-text">Check out my Github for the projects I'm working on!</p>
+                                  <a href="https://github.com/calvinleung0" class="btn btn-primary">My Github!</a>
+                                </div>
+                        </div>
+                </div>
 
-        <h3>Rutgers Info Widget</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-9.jpg" width="600" height="600" alt="Rock Paper Scissors">
+                <div class="col-sm-2">
+                </div>
 
-        <h3>Rock Paper Scissors</h3>
-      </div>
+                <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="data:image/png;base64,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" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">GitLab Repo</h5>
+                                  <p class="card-text">Just our GitLab Repo</p>
+                                  <a href="https://unc.bootcampcontent.com/UNC-Coding-Boot-Camp/UNCHILL201805FSF4-Class-Repository-FSF/tree/master" class="btn btn-primary">Our GitLab Repo!</a>
+                                </div>
+                        </div>
+                </div>
 
-    </section>
+                <div class="col-sm-2">
+                </div>
 
-  </div>
+            </div>
 
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
-  </footer>
+            <br>
+
+            <div class="row">
+                
+                <div class="col-sm-2">
+                </div>
+                
+                <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://pbs.twimg.com/profile_images/786681705981673472/T5OKNZ1-.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Instagram!</h5>
+                                  <p class="card-text">My instagram for the fun of it!</p>
+                                  <a href="https://www.instagram.com/zhii.o/?hl=en" class="btn btn-primary">My Instagram!</a>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="col-sm-2">
+                </div>
+
+                <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Facebook!</h5>
+                                  <p class="card-text">I'm not sure why I'm linking my Facebook, but here you go!</p>
+                                  <a href="https://www.facebook.com/calvinleung0" class="btn btn-primary">My Facebook</a>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="col-sm-2">
+                </div>
+
+            </div>
+
+        </div>
+
+
 </body>
+
+
+<div class="fixed-bottom">
+<footer class="footer">
+        <div class="p-3 mb-2 bg-secondary text-white">
+
+        <div class="container">
+
+            <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: white;">About Me</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html" style="color: white;">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
+                    </li>
+            </ul>
+        </div>
+        </div>
+
+</footer>
+</div>
 
 </html>

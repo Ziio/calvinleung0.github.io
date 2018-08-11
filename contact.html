@@ -1,57 +1,110 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Calvin Leung</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>My Profile</title>
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
 </head>
 
 <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="navbar-brand" href="index.html" style="font-weight: bold;">Calvin Leung</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                    </li>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Calvin Leung</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+                  </ul>
+                </div>
+            </nav>
+        </nav>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+        <br>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
 
-    </section>
+                </div>
+                <div class="col-sm-8">
+                        <form>
+                                <div class="form-group">
+                                  <label for="exampleFormControlInput1">Email address</label>
+                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleFormControlSelect1">Who are you?</label>
+                                  <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Instructor</option>
+                                    <option>Teacher Assistant</option>
+                                    <option>Student</option>
+                                    <option>Random</option>
+                                    <option>Jesus</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleFormControlSelect2">Why are you here?</label>
+                                  <select multiple class="form-control" id="exampleFormControlSelect2">
+                                    <option>Grade your work</option>
+                                    <option>Critisize your work</option>
+                                    <option>For fun</option>
+                                    <option>Send good vibes</option>
+                                    <option>I dont even know</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleFormControlTextarea1">What do you think of this page?</label>
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                              </form>
+                </div>
+                <div class="col-sm-2">
+                    
+                </div>
+            </div>
+        </div>
 
-  </div>
 
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
-  </footer>
 </body>
 
-</html>
+
+<div class="fixed-bottom">
+        <footer class="footer">
+                <div class="p-3 mb-2 bg-secondary text-white">
+        
+                <div class="container">
+        
+                    <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="color: white;">About Me</a>
+                            </li>
+        
+                            <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html" style="color: white;">Portfolio</a>
+                            </li>
+        
+                            <li class="nav-item">
+                            <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
+                            </li>
+                    </ul>
+                </div>
+                </div>
+        
+        </footer>
+        </div>
+        
+        </html>
